@@ -8,5 +8,4 @@ java_binary(
     resources = glob(["src/main/resources/**"]),
     main_class = "com.smicha.sa.App",
     runtime_deps = ["//shared/library-a:la"],
-
 )

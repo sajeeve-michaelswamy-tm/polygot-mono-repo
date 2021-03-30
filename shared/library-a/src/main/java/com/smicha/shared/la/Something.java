@@ -1,4 +1,4 @@
-package com.smicha.shared.la
+package com.smicha.shared.la;
 
 public class Something {
 

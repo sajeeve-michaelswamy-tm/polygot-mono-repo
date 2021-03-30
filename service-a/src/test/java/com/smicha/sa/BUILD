@@ -1,8 +1,8 @@
 load("//:junit5.bzl", "java_junit5_test")
 
 java_junit5_test(
-    name = "unit-tests",
-    srcs = glob(["src/test/java/com/smicha/sa/**/*.java"]
+    name = "sa-unit-tests",
+    srcs = glob(["*.java"]
     ),
     resources = glob(["src/test/resources/**"]),
     test_package = "com.smicha.sa",
