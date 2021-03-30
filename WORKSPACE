@@ -10,11 +10,25 @@ http_archive(
     url = "https://github.com/bazelbuild/rules_jvm_external/archive/%s.zip" % RULES_JVM_EXTERNAL_TAG,
 )
 
+
+load(":junit5.bzl", "junit_jupiter_java_repositories", "junit_platform_java_repositories")
+
+JUNIT_JUPITER_VERSION = "5.7.1"
+
+JUNIT_PLATFORM_VERSION = "1.7.1"
+
+junit_jupiter_java_repositories(
+    version = JUNIT_JUPITER_VERSION,
+)
+
+junit_platform_java_repositories(
+    version = JUNIT_PLATFORM_VERSION,
+)
+
 load("@rules_jvm_external//:defs.bzl", "maven_install")
 
 maven_install(
     artifacts = [
-        "org.junit.jupiter:junit-jupiter-api:5.7.1",
         "com.google.guava:guava:30.1-jre",
     ],
     fetch_sources = True,
