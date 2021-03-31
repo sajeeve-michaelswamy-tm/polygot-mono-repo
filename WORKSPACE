@@ -30,6 +30,10 @@ load("@rules_jvm_external//:defs.bzl", "maven_install")
 maven_install(
     artifacts = [
         "com.google.guava:guava:30.1-jre",
+        "org.junit.jupiter:junit-jupiter-api:5.7.1",
+        "org.mockito:mockito-junit-jupiter:3.4.4",
+        "org.mockito:mockito-core:3.4.4",
+        "org.junit.jupiter:junit-jupiter-engine:5.7.1",
     ],
     fetch_sources = True,
     repositories = [

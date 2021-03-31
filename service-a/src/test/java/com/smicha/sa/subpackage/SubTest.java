@@ -1,14 +1,14 @@
-package com.smicha.sa;
-
+package com.smicha.sa.subpackage;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-public class AppTest {
+public class SubTest {
+
     @Test
-    public void someTest()
+    public void someSubTest()
     {
-        System.out.println("someTest");
+        System.out.println("someSubTest");
         Assertions.assertEquals(1,1);
     }
 }
