@@ -29,4 +29,7 @@ Paradigm shift
     -  https://blog.bazel.build/2019/09/29/intellij-bazel-sync.html
     -  https://docs.bazel.build/versions/master/visibility.html
 
-     
+
+CI : 
+bazel build //...
+bazel test  //...
