@@ -8,7 +8,7 @@ public class AppTest {
     @Test
     public void someTest()
     {
-        System.out.println("someTest");
+        System.out.println("someTest changed");
         Assertions.assertEquals(1,1);
     }
 }

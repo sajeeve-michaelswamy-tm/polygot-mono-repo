@@ -1,10 +1,10 @@
 # bazel-mono-repo
 
 ## bazel-mono-repo
-###      - service-a
+###       - service-a
 ###       - service-b
 ###       - service-c
-###       -shared
+###       - shared
 ####         - library-a
 ####         - library-b
 
@@ -16,7 +16,7 @@ Gradle
     - difficult to support polygon monorepos ( multiple languages ) 
 
 Bazel
-    - starlark ( an extension of python )
+    - starlark ( a subset of python )
     - incremental builds are truly incremental
     - the way bazel is designed - it just support polygot mono repos out of the box
     - builds are highly deterministic
