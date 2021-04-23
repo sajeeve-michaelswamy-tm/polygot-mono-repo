@@ -8,3 +8,7 @@ message GreetingRequest {
 message GreetingResponse {
   string greeting = 1;
 };
+
+service HelloService {
+  rpc hello(GreetingRequest) returns (GreetingResponse);
+}
