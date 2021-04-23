@@ -7,5 +7,8 @@ java_binary(
     srcs = glob(["**/*.java"]),
     main_class = "com.smicha.sb.App",
     resources = glob(["src/main/resources/**"]),
-    runtime_deps = ["//shared/library-b:lb"],
+    runtime_deps = [
+        "//shared/proto:di_java_proto",
+        "//shared/library-b:lb",
+    ],
 )

@@ -1,6 +1,6 @@
 syntax = "proto3";
-package hello;
-option go_package = "github.com/sajeeve-michaelswamy-tm/polygot-mono-repo/shared/proto/hello";
+package di;
+option go_package = "github.com/sajeeve-michaelswamy-tm/polygot-mono-repo/shared/proto/di/di";
 message GreetingRequest {
   string name = 1;
 };
