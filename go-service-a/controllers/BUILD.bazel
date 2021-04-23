@@ -1,0 +1,14 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library", "go_test")
+
+go_library(
+    name = "controllers",
+    srcs = ["Hello.go"],
+    importpath = "github.com/sajeeve-michaelswamy-tm/polygot-mono-repo/go-service-a/controllers",
+    visibility = ["//visibility:public"],
+)
+
+go_test(
+    name = "controllers_test",
+    srcs = ["Hello_test.go"],
+    embed = [":controllers"],
+)
